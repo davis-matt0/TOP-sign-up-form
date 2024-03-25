@@ -1,58 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tauri&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <meta charset="utf-8" />
     <meta name="viewport" width="device-width, initial-scale=1.0" />
     <title>Sign Up</title>
   </head>
   <body>
-    <h1>
-      Welcome to *insert name here* <br />
-      Sign up now to get started
-    </h1>
-    <form method="post">
-      <div class="firstname">
-        <label for="first-name">First Name: </label>
-        <input
-          type="text"
-          id="first-name"
-          name="user_firstname"
-          placeholder="Matt"
-          required
-        />
+    <div class="logo-sidebar">
+      <div class="logo">
+        <img src="./img/ghost-8250317_640.png" alt="logo" width="25%" />
+        <h1>G H O S T</h1>
       </div>
-      <div class="lastname">
-        <label for="last-name">Last Name: </label>
-        <input
-          type="text"
-          id="last-name"
-          name="user_lastname"
-          placeholder="Davis"
-          required
-        />
-      </div>
-      <div class="email">
-        <label for="email">Email Address: </label>
-        <input
-          type="email"
-          id="email"
-          name="user_email"
-          placeholder="example@domain.com"
-          required
-        />
-      </div>
-      <div class="phonenumber">
-        <label for="phone-number">Phone Number: </label>
-        <input type="number" id="phone-number" name="user_phone" required />
-      </div>
-      <div class="pass">
-        <label for="password">Password: </label>
-        <input type="password" id="password" name="user_pass" required />
-      </div>
-      <div class="pass_confirm">
-        <label for="pass-confirm">Confirm Password: </label>
-        <input type="password" id="pass-confirm" name="pass-confirm" required />
-      </div>
+    </div>
+    <div class="header">
+      <h2>
+        I don't know what this section is actually supposed to be for, it's just part of the template that I used to make this.
+      </h2>
+    </div>
+    <div class="form">
+      <form method="post">
+        <fieldset class="name">
+          <div class="firstname">
+            <label for="first-name">FIRST NAME </label>
+            <input
+              type="text"
+              id="first-name"
+              name="user_firstname"
+              placeholder="Jon"
+              required
+            />
+          </div>
+          <div class="lastname">
+            <label for="last-name">LAST NAME </label>
+            <input
+              type="text"
+              id="last-name"
+              name="user_lastname"
+              placeholder="Doe"
+              required
+            />
+          </div>
+        </fieldset>
+        <fieldset class="contact-info">
+          <div class="email">
+            <label for="email">EMAIL </label>
+            <input
+              type="email"
+              id="email"
+              name="user_email"
+              placeholder="example@domain.com"
+              required
+            />
+          </div>
+          <div class="phonenumber">
+            <label for="phone-number">PHONE NUMBER </label>
+            <input type="number" id="phone-number" name="user_phone" required />
+          </div>
+          <fieldset class="passwords">
+            <div class="password">
+              <label for="password">PASSWORD </label>
+              <input type="password" id="password" name="user_pass" required />
+            </div>
+          <div class="passconfirm">
+            <label for="pass-confirm">CONFIRM PASSWORD </label>
+            <input
+              type="password"
+              id="pass-confirm"
+              name="pass-confirm"
+              required
+            />
+          </div>
+        </fieldset>
+        <fieldset class="submit">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="./index.html">Log In</a></p>
+        </fieldset>
     </form>
+    </div>
   </body>
 </html>
