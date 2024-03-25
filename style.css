@@ -121,7 +121,6 @@ fieldset {
 }
 
 .submit {
-  /* border: solid red; */
   position: absolute;
   /* width: calc(80% - 29%); */
   width: 955px;
@@ -129,6 +128,7 @@ fieldset {
   height: calc(100vh - 714px);
   background-color: rgb(240, 240, 240);
   box-shadow: 0 10px 10px -10px grey inset;
+  display: flex;
 }
 
 button {
@@ -148,8 +148,9 @@ button {
 }
 
 p {
-  margin-left: 50px;
-  margin-top: 30px;
+  height: max-content;
+  margin-left: -250px;
+  margin-top: 100px;
   font-family: "Tauri", sans-serif;
   font-weight: 400;
   font-style: normal;
