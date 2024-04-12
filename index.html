@@ -66,12 +66,12 @@
           </div>
           <div class="phonenumber">
             <label for="phone-number">PHONE NUMBER </label>
-            <input type="number" id="phone-number" name="user_phone" placeholder="123-456-7890" required />
+            <input type="number" id="phone-number" name="user_phone" placeholder="123-456-7890" minlength="10" maxlength="10" required />
           </div>
           <fieldset class="passwords">
             <div class="password">
               <label for="password">PASSWORD </label>
-              <input type="password" id="password" name="user_pass" required />
+              <input type="password" id="password" name="user_pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required />
             </div>
           <div class="passconfirm">
             <label for="pass-confirm">CONFIRM PASSWORD </label>
